@@ -50,12 +50,16 @@
         return $return;
     }
     var bindValidate = function() {
-        $("form[validate]").each(function() {
-            $(this).validate();
-            validate(this);
-        });
+        
+            console.log($("form[validate]"));
+            $("form[validate]").each(function() {
+                $(this).validate();
+                validate(this);
+            });
+        
     }
-
-    bindValidate();
+    $(window).on('load',function() {
+        bindValidate();
+    });
 })(jQuery);
 
