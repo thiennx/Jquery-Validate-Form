@@ -21,7 +21,6 @@
         } catch (e) {
             rules = "";
         }
-        console.log(rules);
         if (typeof rules == "object") {
             if (rules.length) {
                 for (var i = 0; i < rules.length; i++) {
@@ -46,19 +45,16 @@
             $return["messages"] = new Object();
             $return["messages"][r] = rule["message"];
         }
-        console.log($return);
         return $return;
     }
     var bindValidate = function() {
-        
-            console.log($("form[validate]"));
-            $("form[validate]").each(function() {
-                $(this).validate();
-                validate(this);
-            });
-        
+        $("form[validate]").each(function() {
+            $(this).validate();
+            validate(this);
+        });
+
     }
-    $(window).on('load',function() {
+    $(window).on('load', function() {
         bindValidate();
     });
 })(jQuery);
