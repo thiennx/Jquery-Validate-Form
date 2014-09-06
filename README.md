@@ -2,11 +2,11 @@ Jquery-Validate-Form
 ====================
 
 *Include lib
-
+<pre>
 <script type="text/javascript" src="jquey.js"></script>
 <script type="text/javascript" src="jquey.validate.js"></script>
 <script type="text/javascript" src="jquery.lms.validate.js"></script>
-
+</pre>
 *Create Form width attribute 'validate'
 
 Cakephp : 
