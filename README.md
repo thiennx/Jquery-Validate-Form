@@ -1,6 +1,6 @@
 Jquery-Validate-Form
 ====================
-
+```html
 *Include lib
 
 <script type="text/javascript" src="jquey.js"></script>
@@ -45,4 +45,4 @@ Simple rule:
 
 *Reference:
 http://jqueryvalidation.org/
-
+```
